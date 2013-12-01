@@ -34,3 +34,20 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# VIM tmp and undo files
+*.un~
+*.swp
+*.swo
+
+# rope project directories
+.ropeproject
+
+# image files
+*.png
+*.gif
+*.jpg
+
+# data files
+*.h5
+*.h5_bak
