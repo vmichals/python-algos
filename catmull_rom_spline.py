@@ -36,10 +36,9 @@ def catmull_rom(p_x, p_y, res):
     x_intpol = np.empty(res*(len(p_x)-1) + 1)
     y_intpol = np.empty(res*(len(p_x)-1) + 1)
 
-    # set the last x-coord, the others will be set in the loop
+    # set the last x- and y-coord, the others will be set in the loop
     x_intpol[-1] = p_x[-1]
-    # set the y-coords of all support points
-    y_intpol[::res] = p_y
+    y_intpol[-1] = p_y[-1]
 
     # loop over segments (we have n-1 segments for n points)
     for i in range(len(p_x)-1):
